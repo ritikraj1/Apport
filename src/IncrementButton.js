@@ -5,7 +5,7 @@ import CounterValue from "./CounterValue";
 
 function IncrementButton(){
 
-    const [count, setCount] = useState();
+    const [count, setCount] = useState(1);
     const [currCount, setCurrCount] = useState(0);
   
   const text = (event) => {
