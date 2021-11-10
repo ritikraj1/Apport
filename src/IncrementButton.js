@@ -36,7 +36,7 @@ function IncrementButton(){
         Ritik: count + 1,
       },
     });
-    setCount(count + 1);
+    if(count!==1000) setCount(count + 1);
   };
   useEffect(() => {
     if (currCount === 0) {
@@ -53,6 +53,7 @@ function IncrementButton(){
           }
         });
     }
+    // eslint-disable-next-line
   },[]);
 
     return(
